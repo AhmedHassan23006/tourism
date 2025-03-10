@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Egypt Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signin">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1>Discover Egypt</h1>
+            <p>Experience the magic of ancient civilization</p>
+            <a href="#packages" class="btn btn-primary btn-lg">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- Sign In Section -->
+    <section id="signin" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Sign In</h3>
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Packages</h2>
+            
+            <!-- Pre-made Packages -->
+            <div class="row mb-5">
+                <h3 class="text-center mb-4">Pre-made Packages</h3>
+                <div class="col-md-4 mb-4">
+                    <div class="card package-card">
+                        <div class="card-body">
+                            <h4>Cairo Explorer</h4>
+                            <p>3 Days - Pyramids, Museum, Khan el-Khalili</p>
+                            <p class="price">$499</p>
+                            <button class="btn btn-primary w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card package-card">
+                        <div class="card-body">
+                            <h4>Luxor Adventure</h4>
+                            <p>4 Days - Valley of Kings, Karnak Temple</p>
+                            <p class="price">$699</p>
+                            <button class="btn btn-primary w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card package-card">
+                        <div class="card-body">
+                            <h4>Nile Cruise</h4>
+                            <p>7 Days - Cairo to Aswan</p>
+                            <p class="price">$1299</p>
+                            <button class="btn btn-primary w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Package Builder -->
+            <div class="custom-package">
+                <h3 class="text-center mb-4">Build Your Custom Package</h3>
+                <form id="customPackageForm" class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Hotel</label>
+                        <select class="form-select">
+                            <option>Select Hotel</option>
+                            <option>Luxury Resort Cairo</option>
+                            <option>Nile View Hotel</option>
+                            <option>Desert Oasis Resort</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Restaurant Package</label>
+                        <select class="form-select">
+                            <option>Select Package</option>
+                            <option>Traditional Egyptian</option>
+                            <option>International Cuisine</option>
+                            <option>Luxury Dining</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Transport</label>
+                        <select class="form-select">
+                            <option>Select Transport</option>
+                            <option>Private Car</option>
+                            <option>Luxury Van</option>
+                            <option>Group Bus</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Flight Class</label>
+                        <select class="form-select">
+                            <option>Select Class</option>
+                            <option>Economy</option>
+                            <option>Business</option>
+                            <option>First Class</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Calculate Package</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>We specialize in creating unforgettable Egyptian travel experiences. With years of expertise in tourism, we provide the best services for exploring Egypt's ancient wonders and modern delights.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Why Choose Us</h2>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check"></i> Expert Local Guides</li>
+                        <li><i class="fas fa-check"></i> Customizable Packages</li>
+                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                        <li><i class="fas fa-check"></i> Best Price Guarantee</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Social Media -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@egypttourism.com</p>
+                    <p>Phone: +20 123 456 789</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
